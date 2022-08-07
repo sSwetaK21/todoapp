@@ -5,11 +5,11 @@ let input = document.querySelector('input')
 let button = document.querySelector("submit_btn")
 let task = document.querySelector("#tasks")
 
-form.addEventListener("submit",(event)=> {
-    //prevents form from submitting
-    event.preventDefault()
+form.addEventListener("submit", (event) => {
+  //prevents form from submitting
+  event.preventDefault()
 
-    let task = input.value;
+  let task = input.value;
   if (task.length > 1) {
     //creating todo div
     let todoDiv = document.createElement("div")

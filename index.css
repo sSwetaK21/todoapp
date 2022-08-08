@@ -7,18 +7,32 @@
 body{
     font-family: 'Mouse Memoirs', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(103deg, rgba(26,41,128,1) 1%, rgba(26,41,128,1) 15%, rgba(9,244,237,1) 100%);
+    /* background: linear-gradient(103deg, rgba(26,41,128,1) 1%, rgba(26,41,128,1) 15%, rgba(9,244,237,1) 100%); */
+
+    background-image: url(Jan-Work_5.jpg);
+    background-position: center;
+    background-size: 100%;
+    /* height: 100vh; */
+    background-repeat: no-repeat;
     color: white;
+}
+img.img-fluid {
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
 }
 .heading {
     text-align: center;
     font-size: 60px;
     margin-top: 33px;
+    color: #013d55;
 
 }
 .headTwo {
     font-size: 30px;
     text-align: center;
+    color: #ff864d;
+
 }
 .hrclas{
     border: 2px solid black;
@@ -65,9 +79,9 @@ form {
     border: none;
     font-size: 14px;
     font-weight: bold;
-    background-color: #3498DB;
+    background-color: #ff864d47;
     border-radius: 5px;
-    box-shadow: inset 5px 4px 10px #77bbe9, inset -5px -5px 3px rgb(26 41 128);
+    box-shadow: inset 5px 4px 10px #fff2d2, inset -5px -5px 3px #ff864d;
 
 }
 

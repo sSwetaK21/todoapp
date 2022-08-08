@@ -3,7 +3,11 @@
 let form = document.querySelector('form')
 let input = document.querySelector('input')
 let button = document.querySelector("submit_btn")
-let task = document.querySelector("#tasks")
+let tasks = document.querySelector("#tasks")
+
+// console.log(form, input, button, task)
+
+
 
 form.addEventListener("submit", (event) => {
   //prevents form from submitting
@@ -21,23 +25,23 @@ form.addEventListener("submit", (event) => {
     new_input.value = task;
     new_input.setAttribute("readonly", "readonly");
     //Addding input to div
-    todoDiv.appendChild(new_input)
+    todoDiv.append(new_input)
 
     //edit button
     let completeBtn = document.createElement("button")
     completeBtn.innerHTML = '<i class="fa-solid fa-pen"></i>'
     completeBtn.classList.add("completeBtn")
 
-    todoDiv.appendChild(completeBtn)
+    todoDiv.append(completeBtn)
 
     //delete button
     let deleteBtn = document.createElement("button")
     deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>'
-    compdeleteBtnleteBtn.classList.add("deleteBtn")
+    deleteBtn.classList.add("deleteBtn")
 
-    todoDiv.appendChild(deleteBtn)
+    todoDiv.append(deleteBtn)
     //appending
-    task.appendChild(todoDiv)
+    tasks.appendChild(todoDiv)
 
   }
 

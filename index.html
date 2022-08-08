@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
+        <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+
+    <!-- css link -->
     <link rel="stylesheet" href="index.css">
     <!-- <script src="https://kit.fontawesome.com/99023e027c.js" crossorigin="anonymous"></script>  -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
- </head>
+</head>
+
 <body>
+    
     <header>
         <h1 class="heading">To Do List</h1>
     </header>
 
     <main>
+      
         <div class="container">
-        <div class="leftbox box">
-            <h2 class="headTwo">Add Item</h2>
-            <hr class="hrclas">
+            <div class="leftbox box">
+                <h2 class="headTwo">Add Item</h2>
+                <hr class="hrclas">
 
-            <form action="#">
-                <input type="text" name="inputbox" id="teextbox" placeholder="Add task">
-                <button class="submit_btn" id="submit_btn" type="submit">
-                  Add  <i class='bx bx-plus'></i></button>
-            </form>
+                <form action="#">
+                    <input type="text" name="inputbox" id="teextbox" placeholder="Add task">
+                    <button class="submit_btn" id="submit_btn" type="submit">
+                        Add <i class='bx bx-plus'></i></button>
+                </form>
 
+            </div>
+            <div class="centerbox box">
+                <h2 class="headTwo">ToDo List</h2>
+                <hr class="hrclas">
+                <div id="tasks"></div>
+
+            </div>
+            <div class="rightbox box">
+                <h2 class="headTwo">Completed</h2>
+                <hr class="hrclas">
+
+            </div>
         </div>
-        <div class="centerbox box">
-            <h2 class="headTwo">ToDo List</h2>
-            <hr class="hrclas">
-            <div id="tasks"></div>
-
-        </div>
-        <div class="rightbox box">
-            <h2 class="headTwo">Completed</h2>
-            <hr class="hrclas">
-
-        </div>
-    </div>
     </main>
-    
+
 
     <script src="index.js"></script>
 </body>
+
 </html>
